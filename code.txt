@@ -1,0 +1,23 @@
+SELECT * FROM Supermarket_sales ORDER BY Unitprice LIMIT 1;
+
+SELECT * FROM Supermarket_sales ORDER BY Unitprice LIMIT 1;
+
+SELECT * FROM Supermarket_sales ORDER BY Quantity LIMIT 1;
+
+SELECT * FROM Supermarket_sales ORDER BY Quantity DESC LIMIT 1;
+
+SELECT * FROM Supermarket_sales WHERE Productline = 'Health and Beauty' ORDER BY Quantity LIMIT 1;
+
+SELECT * FROM Supermarket_sales WHERE Productline = 'Health and Beauty' ORDER BY Quantity DESC LIMIT 1;
+
+SELECT * FROM Supermarket_sales WHERE Productline = 'Health and Beauty' ORDER BY Unitprice LIMIT 1;
+
+SELECT * FROM Supermarket_sales WHERE Productline = 'Health and Beauty' ORDER BY Unitprice DESC LIMIT 1;
+
+SELECT * FROM Supermarket_sales WHERE Productline = 'Electronic accessories' ORDER BY Quantity LIMIT 1;
+
+SELECT * FROM Supermarket_sales WHERE Productline = 'Electronic accessories' ORDER BY Quantity DESC LIMIT 1;
+
+SELECT count(gender) FROM Supermarket_sales WHERE Productline = 'Health and beauty' AND gender = 'Male';
+
+SELECT count(gender) FROM Supermarket_sales WHERE Productline = 'Fashion accessories' AND gender = 'Female';
