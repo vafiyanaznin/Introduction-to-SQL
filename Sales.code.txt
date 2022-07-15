@@ -1,0 +1,9 @@
+SELECT SUM (cogs) FROM SUPERMARKETSALES WHERE City = 'Mandalay' OR City = 'Yangon';
+
+SELECT Branch FROM SUPERMARKETSALES WHERE City = 'Yangon'
+
+SELECT max (gross_margin_percentage) FROM SUPERMARKETSALES WHERE Gender = 'Male' or Gender = 'Female';
+
+SELECT Customertype , max (gross_iincome) FROM SUPERMARKETSALES group by Customertype ;
+
+SELECT InvoiceID , min (gross_iincome) FROM SUPERMARKETSALES ; 
