@@ -1,0 +1,42 @@
+SELECT count( Position ) FROM HRDataset_v14 WHERE Position = 'Production Technician I' ;
+
+SELECT count ( GenderID ) FROM HRDataset_v14 WHERE GenderID = '1';
+
+SELECT Employee_Name FROM HRDataset_v14 WHERE ManagerName = 'Michael Albert';
+
+SELECT Employee_Name FROM HRDataset_v14 WHERE EmploymentStatus = 'Active';
+
+SELECT Employee_Name FROM HRDataset_v14 WHERE EmploymentStatus = 'Active' AND  MaritalDesc = 'Married';
+
+SELECT Employee_Name FROM HRDataset_v14 WHERE EmploymentStatus = 'Active' AND Salary <= 60000;
+
+SELECT max ( EngagementSurvey ) , Employee_Name FROM HRDataset_v14 WHERE Position = 'Production Technician II';
+
+SELECT max (Salary), Position FROM HRDataset_v14;
+
+SELECT  Employee_Name  FROM HRDataset_v14 WHERE Salary < 69020.6848874598 ;
+
+SELECT  Employee_Name , min(EmpSatisfaction) FROM HRDataset_v14 WHERE Salary < 69020.6848874598 ;
+
+SELECT count( Employee_Name ) FROM HRDataset_v14 WHERE PerformanceScore = 'Fully Meets' ;
+
+SELECT count( Employee_Name ) FROM HRDataset_v14 WHERE EmpStatusID = 5 ;
+
+SELECT count( Employee_Name ) FROM HRDataset_v14 WHERE Department = 'IT/IS' ;
+
+SELECT MAX (Department) FROM HRDataset_v14 ;
+
+SELECT count(EmpID), max( State )  FROM HRDataset_v14 WHERE CitizenDesc NOT IN ('US Citizen');
+
+SELECT min (Department) FROM HRDataset_v14 ;
+
+SELECT Employee_Name ,  max ( Salary ) FROM HRDataset_v14 WHERE RecruitmentSource = 'Diversity Job Fair';
+
+SELECT  Employee_Name FROM HRDataset_v14 WHERE EmploymentStatus = 'Terminated for Cause';
+
+SELECT count( Position ) , Position FROM HRDataset_v14 GROUP BY Position ;
+
+SELECT count( Position ) FROM HRDataset_v14 WHERE State = 'MA' AND Position = 'Data Analyst';
+
+SELECT count(EmpID), max( State )  FROM HRDataset_v14 WHERE CitizenDesc NOT IN ('US Citizen');
+
